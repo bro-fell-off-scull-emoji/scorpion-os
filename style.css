@@ -15,24 +15,70 @@ body, html {
   gap: 20px;
 }
 
-.app {
+.app-icon {
   width: 80px;
   text-align: center;
   cursor: pointer;
 }
 
-.app img {
+.app-icon img {
   width: 64px;
   height: 64px;
 }
 
-iframe {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  border: none;
+.window {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 400px;
+  height: 300px;
   background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #ccc;
   z-index: 100;
+}
+
+.title-bar {
+  background: #2c3e50;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.title-bar .buttons button {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-btn { background: #e74c3c; }
+.min-btn { background: #f1c40f; }
+.max-btn { background: #2ecc71; }
+
+.window-content {
+  flex: 1;
+  padding: 10px;
+  overflow: auto;
+}
+
+.resize-handle {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
 }
