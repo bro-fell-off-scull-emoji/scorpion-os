@@ -1,52 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scorpion OS</title>
-  <style>
-    body {
-      margin: 0;
-      background: #0f0f0f;
-      color: rgb(134, 210, 87);
-      font-family: sans-serif;
-      overflow: hidden;
-    }
-
-    #desktop {
-      width: 100vw;
-      height: 100vh;
-      position: relative;
-    }
-
-    #taskbar {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 50px;
-      background: #1a1a1a;
-      display: flex;
-      align-items: center;
-      padding: 0 10px;
-    }
-
-    .taskbar-btn {
-      margin-right: 10px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div id="desktop"></div>
-
-<div id="taskbar">
-  <div class="taskbar-btn" onclick="openApp('notes')">Notes</div>
-</div>
-
-<script>
-function openApp(app) {
-  alert("Opening " + app);
-}
-</script>
-
+  <div id="desktop">
+    <div id="app-container"></div>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
