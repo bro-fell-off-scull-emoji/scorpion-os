@@ -36,3 +36,23 @@ body {
   justify-content: space-between;
   cursor: grab;
 }
+
+/* DESKTOP ICONS */
+.icon {
+  width: 80px;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+}
+
+.icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.icon span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
