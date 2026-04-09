@@ -1,6 +1,6 @@
 const apps = [
   { name: "Notes", icon: "apps/notes/icon.png", path: "apps/notes/content.html" },
-  { name: "Calculator", icon: "apps/calculator/icon.png", path: "apps/calculator/content.html" }
+  { name: "Calculator", icon: "📱", path: "apps/calculator/content.html" }
 ];
 
 const appContainer = document.getElementById("app-container");
