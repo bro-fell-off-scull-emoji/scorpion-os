@@ -28,3 +28,15 @@ function loadDesktop() {
 
 // run on load
 window.onload = loadDesktop;
+
+let fileSystem = JSON.parse(localStorage.getItem("scorpionFS")) || {
+  Desktop: {
+    "Notes.txt": "This is a note"
+  },
+  Documents: {},
+  Downloads: {}
+};
+
+function saveFS() {
+  localStorage.setItem("scorpionFS", JSON.stringify(fileSystem));
+}
